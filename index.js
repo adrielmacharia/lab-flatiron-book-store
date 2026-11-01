@@ -47,6 +47,8 @@ const bookStore = {
 const bookStoreTitle=document.getElementById('header');
 bookStoreTitle.textContent=bookStore.name;
 
+const bookList=document.getElementById('book-list');
+
 for(const book of bookStore.books){
 
     const bookContainer=document.createElement('li');
@@ -70,4 +72,3 @@ const deleteElement=document.getElementById('delete-this');
 if(deleteElement){
     deleteElement.remove();
 }
-
